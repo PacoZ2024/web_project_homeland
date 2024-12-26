@@ -1,0 +1,12 @@
+.footer {
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.footer__author {
+  margin: 92px 0 0;
+  padding-bottom: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
