@@ -1,9 +1,14 @@
 .content {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.contents-intro {
   max-width: 984px;
   margin: 0 auto;
 }
 
-.contents {
+.content__contents-intro {
   max-width: 830px;
   margin: 92px auto 0 0;
 }
@@ -32,9 +37,100 @@
 
 .content__intro {
   max-width: 722px;
-  margin: 0 auto 0 0;
+  margin: 0 auto 118px 0; /* Agregar las mediaquery para 118px*/
   font-size: 16px;
   line-height: 26px;
+}
+
+.contents-body {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.content__gallery {
+  margin: 0 0 92px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.content__photo-grid {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content__places {
+  max-width: 984px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: 460px 484px;
+  grid-template-rows: 152px 460px 48px;
+  gap: 48px 40px;
+}
+
+.content__places:nth-of-type(4) {
+  grid-template-rows: 152px 460px 151px;
+}
+
+.content__places:last-of-type {
+  margin: 0 auto 90px;
+}
+
+.content__title-place {
+  margin: 0;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+.content__artist {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.content__title-artist {
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.content__name-artist {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.content__image-place {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.content__description-place {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  font-size: 18px;
+  line-height: 163%;
+}
+
+.content__paragraph-description {
+  margin: 0 0 25px;
+}
+
+.content__button-buy {
+  border-style: none;
+  max-width: 289px;
+  max-height: 48px;
+  padding: 13px 20px;
+  color: #ffffff;
+  font-size: 18px;
+  /*font-weight: semi-bold; descargar este peso*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to right, #0278fe 0%, #003a7b 99.98%);
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 1024px) {
