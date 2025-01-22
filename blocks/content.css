@@ -103,10 +103,36 @@
   line-height: 22px;
 }
 
+.content__image {
+  position: relative;
+}
+
 .content__image-place {
   width: 100%;
   object-fit: cover;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.content__image-cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content__image-cover:hover {
+  opacity: 1;
+}
+
+.content__image-name {
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
 }
 
 .content__description-place {
@@ -129,8 +155,16 @@
   font-size: 18px;
   font-weight: 600;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(to right, #0278fe 0%, #003a7b 99.98%);
+  background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   border-radius: 4px;
+}
+
+.content__button-buy:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
 }
 
 @media screen and (max-width: 1024px) {
