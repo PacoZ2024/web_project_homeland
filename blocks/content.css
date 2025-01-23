@@ -229,6 +229,10 @@
     align-items: flex-end;
   }
 
+  .content__artist {
+    max-width: 352px;
+  }
+
   .content__description-place {
     max-width: 352px;
     font-size: 16px;
