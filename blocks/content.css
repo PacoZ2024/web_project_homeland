@@ -273,20 +273,35 @@
     row-gap: 30px;
   }
 
+  .content__places:nth-of-type(3) {
+    grid-template-rows: 35px 45px 320px 649px 48px;
+  }
+
+  .content__places:nth-of-type(4) {
+    grid-template-rows: 70px 67px 320px 934px 48px;
+  }
+
+  .content__places:nth-of-type(5) {
+    grid-template-rows: 35px 67px 320px 752px 48px;
+    margin: 0 auto 65px;
+  }
+
   .content__title-place {
+    max-width: 288px;
     font-size: 32px;
     line-height: 35px;
+  }
+
+  .content__artist {
+    max-width: 288px;
   }
 
   .content__image {
     left: -16px;
   }
 
-  .content__image-place {
-    box-shadow: none;
-  }
-
   .content__description-place {
+    max-width: 288px;
     grid-row: 4/5;
     grid-column: 1/2;
     font-size: 16px;
