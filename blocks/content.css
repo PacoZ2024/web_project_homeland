@@ -243,9 +243,44 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .content__places {
+    grid-template-columns: 235px 1fr;
+    grid-template-rows: 10% 235px 90%;
+  }
+
+  .content__places:nth-of-type(3) {
+    grid-template-rows: 8% 235px 92%;
+  }
+
+  .content__places:nth-of-type(4) {
+    grid-template-rows: 11% 235px 89%;
+  }
+
+  .content__places:nth-of-type(5) {
+    grid-template-rows: 10% 235px 50%;
+  }
+
+  .content__description-place {
+    max-width: 452px;
+  }
+
+  .content__paragraph-description {
+    max-width: 452px;
+  }
+
+  .content__button-buy {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 544px) {
   .content {
     margin-top: 64px;
+    padding: 0;
+  }
+
+  .contents-intro {
     padding: 0 16px;
   }
 
@@ -268,6 +303,7 @@
 
   .content__gallery {
     margin: 0 0 62px;
+    padding: 0 16px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -298,20 +334,19 @@
 
   .content__title-place {
     max-width: 288px;
+    padding: 0 16px;
     font-size: 32px;
     line-height: 35px;
   }
 
   .content__artist {
     max-width: 288px;
-  }
-
-  .content__image {
-    left: -16px;
+    padding: 0 16px;
   }
 
   .content__description-place {
     max-width: 288px;
+    padding: 0 16px;
     grid-row: 4/5;
     grid-column: 1/2;
     font-size: 16px;
@@ -323,6 +358,7 @@
 
   .content__button-buy {
     max-width: 288px;
+    margin: 0 16px;
     font-size: 14px;
   }
 }
